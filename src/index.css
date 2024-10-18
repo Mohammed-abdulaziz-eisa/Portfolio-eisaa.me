@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Spectral', serif;
+  font-size: 18px; /* Larger font for improved readability */
+  line-height: 1.75; /* Spaced out for comfortable reading */
+  letter-spacing: 0.01em; /* Slight letter spacing for more elegant typography */
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+/* Subtle twinkling background effect */
+.stars {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.star {
+  animation: twinkle 5s infinite;
+  background: #fff;
+  border-radius: 50%;
+  height: 1px;
+  position: absolute;
+  width: 1px;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Content container */
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+header, main section {
+  margin-bottom: 2rem;
+}
+
+/* Paragraph styling with softer font-weight */
+main section p {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  font-weight: 300; /* Lighter font-weight for body text */
+  line-height: 1.75;
+  letter-spacing: 0.015em; /* Enhanced readability */
+  margin-bottom: 0.75rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #0a0a0acc;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Link styling with smooth transitions */
+a {
+  color: #4d88ff;
+  text-decoration: none;
+  font-weight: 500; /* Medium font-weight for emphasis */
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #80aaff;
+}
+
+/* Page structure */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+/* Shining star effect */
+.shining-star {
+  animation: shine 4s ease-in-out infinite;
+  height: 36px;
+  width: 36px;
+}
+
+@keyframes shine {
+  0%, 100% {
+    filter: drop-shadow(0 0 1px rgba(77,136,255,0.3));
+    opacity: 0.4;
+  }
+  50% {
+    filter: drop-shadow(0 0 4px rgba(77,136,255,0.7));
+    opacity: 1;
+  }
+}
