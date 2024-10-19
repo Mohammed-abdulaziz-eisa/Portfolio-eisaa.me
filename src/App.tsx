@@ -40,7 +40,7 @@ function App() {
             <p className="text-lg leading-relaxed">
               Reach me at{' '}
               <a href="mailto:mohamed.abdulaziz.eisa@gmail.com" className="hover:underline">
-                Email
+              mohamed.abdulaziz.eisa@gmail.com
               </a>
               {' '}or {' '}
               <a href="https://www.linkedin.com/in/mohamedeisa100/" target="_blank" rel="noopener noreferrer" className="hover:underline">
